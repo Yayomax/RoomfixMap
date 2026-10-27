@@ -1,6 +1,6 @@
 # Presentar RoomFix Map
 
-Abrí [operaciones](http://127.0.0.1:8765/?vista=operaciones), [vista técnica](http://127.0.0.1:8765/?vista=tecnico&persona=all) y [habitación 008](http://127.0.0.1:8765/?vista=huesped&habitacion=008) en el mismo navegador y origen.
+Abrí [operaciones](http://127.0.0.1:8765/?vista=operaciones) y [habitación 008](http://127.0.0.1:8765/?vista=huesped&habitacion=008) en el mismo navegador y origen.
 
 ## 1. Mostrar el hotel
 
@@ -10,7 +10,7 @@ Tocá un punto sobre el equipo: la ficha muestra problema, prioridad y responsab
 
 ## 2. Mostrar los recorridos
 
-En **Vista técnica → Todos**, Martín usa azul y Lucía turquesa. Sofía aparece en Control; Diego, fuera de turno, en Servicio.
+Cada técnico (Martín azul, Lucía turquesa) entra con su cuenta y ve sólo sus tareas y su recorrido.
 
 Los números indican el orden de paradas. Tocá una parada o la secuencia inferior: se destaca sólo ese tramo, con su flecha y origen → destino. **Ver completo** recupera los caminos simultáneos. Seleccioná una persona para mostrar su ubicación, camino y tareas; en celular se usa el selector **Persona**.
 

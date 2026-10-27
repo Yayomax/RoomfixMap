@@ -1,5 +1,20 @@
-import { CATEGORIES, TECHS } from "./data.js";
-export const isOpen = (t) => !["resolved", "confirmed"].includes(t.status);
+import { CATEGORIES, TECHS, OPERATOR, GUEST } from "./data.js";
+export const isOpen = (t) =>
+  !["resolved", "confirmed", "cancelled"].includes(t.status);
+export const canCancel = (t) =>
+  ["new", "classified", "assigned", "blocked"].includes(t.status);
+const TECH_ACTIONS = ["start", "resolve", "block"];
+const ADMIN_ACTIONS = ["assign", "access", "override"];
+const GUEST_ACTIONS = ["confirm", "reopen", "cancel", "comment"];
+// Cada acción pertenece a un rol: sólo el técnico a cargo avanza la reparación.
+export function authorize(t, action, actor) {
+  if (TECH_ACTIONS.includes(action) && (!actor || actor !== t.tech))
+    throw Error("Sólo el técnico a cargo puede cambiar el estado de la tarea.");
+  if (ADMIN_ACTIONS.includes(action) && actor !== OPERATOR.id)
+    throw Error("Sólo supervisión puede realizar esta acción.");
+  if (GUEST_ACTIONS.includes(action) && actor !== GUEST.id)
+    throw Error("Sólo el huésped puede realizar esta acción.");
+}
 export const isEmergency = (t) => t.category === "emergencia";
 export function priority(t, now = Date.now()) {
   if (isEmergency(t))
@@ -117,6 +132,17 @@ export function transition(t, action, payload, tickets, now = Date.now()) {
     next.status = "blocked";
     next.blockReason = payload.reason.trim();
     text = `Trabajo bloqueado: ${next.blockReason}`;
+  } else if (action === "cancel") {
+    if (!canCancel(t))
+      throw Error("La solicitud ya no puede cancelarse: la atención comenzó.");
+    next.status = "cancelled";
+    text = "El huésped canceló la solicitud.";
+  } else if (action === "comment") {
+    const comment = payload.text?.trim().slice(0, 240);
+    if (!isOpen(t) || isEmergency(t) || !comment)
+      throw Error("Escribí un comentario para una solicitud abierta.");
+    next.comments = [...(t.comments ?? []), { at: now, text: comment }];
+    text = "El huésped agregó un comentario.";
   } else throw Error("Acción desconocida.");
   next.updatedAt = now;
   next.history.push({ at: now, text });

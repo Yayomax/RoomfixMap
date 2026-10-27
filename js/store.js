@@ -1,5 +1,5 @@
 import { seed, prepareScenario } from "./data.js";
-import { newTicket, transition } from "./engine.js";
+import { newTicket, transition, authorize } from "./engine.js";
 import { dispatchTickets } from "./dispatch.js";
 const KEY = "roomfix-map-v1";
 let memory;
@@ -46,10 +46,11 @@ export const subscribe = (fn) => {
   listeners.add(fn);
   return () => listeners.delete(fn);
 };
-export const updateTicket = (id, action, payload = {}) =>
+export const updateTicket = (id, action, payload = {}, actor) =>
   mutate((s) => {
     const i = s.tickets.findIndex((t) => t.id === id);
     if (i < 0) throw Error("No se encontró la solicitud.");
+    authorize(s.tickets[i], action, actor);
     s.tickets[i] = transition(s.tickets[i], action, payload, s.tickets);
     if(action==="assign")s.tickets[i].assignmentMode="manual";
     return s.tickets[i];

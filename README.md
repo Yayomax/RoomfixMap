@@ -7,19 +7,19 @@ MVP local de mantenimiento para un hotel pequeño: **planta baja, habitaciones 0
 Requiere Python 3. Desde esta carpeta:
 
 ```powershell
-python -m http.server 8765 --bind 127.0.0.1
+python serve.py
 ```
 
 También se puede abrir `INICIAR.bat`. Mantené la terminal abierta.
 
 - [Operaciones](http://127.0.0.1:8765/?vista=operaciones)
 - [Habitación 008](http://127.0.0.1:8765/?vista=huesped&habitacion=008)
-- [Vista técnica: todos](http://127.0.0.1:8765/?vista=tecnico&persona=all)
-- [Vista individual: Martín](http://127.0.0.1:8765/?vista=tecnico&persona=martin)
 
 Usá el mismo origen en todas las pestañas. `localhost` y `127.0.0.1` conservan datos separados. Los módulos necesitan HTTP; no abrir index.html directamente. No se requiere Internet, instalar paquetes ni compilar. Si Windows bloquea el puerto, elegí otro y actualizá todas las URLs.
 
 ## Funcionamiento
+
+Elegir cuenta (sin clave, por pestaña): **Sofía Méndez** (administración), **Martín López** y **Lucía Torres** (técnicos). Sólo el técnico a cargo puede iniciar, resolver o bloquear su tarea; administración asigna, coordina acceso y ajusta prioridad. El huésped puede cancelar hasta que empiece la atención y agregar comentarios. No hay vista técnica separada: cada técnico ve su propio mapa, recorrido e incidencias.
 
 Operaciones pertenece a Sofía Méndez. La pantalla de habitación pertenece a Valentina Ruiz y muestra el logo completo original. El escenario inicial contiene **11 incidencias**, incluidas tres en la **008**: aire, lámpara y grifería. Los reportes guardados se conservan; resolver y recargar no repone los ejemplos.
 

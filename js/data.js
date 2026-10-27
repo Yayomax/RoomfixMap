@@ -69,7 +69,7 @@ export const CATEGORIES = {
     symptoms: [
       ["Humo o fuego", 1],
       ["Riesgo eléctrico", 1],
-      ["Una persona está lesionada", 1],
+      ["Emergencia médica", 1],
       ["Fuga peligrosa", 1],
     ],
   },
@@ -116,6 +116,7 @@ export const STATUS = {
   resolved: "Resuelto",
   confirmed: "Confirmado",
   blocked: "Bloqueado",
+  cancelled: "Cancelado",
 };
 export const PRIORITIES = {
   P0: "Emergencia",
@@ -132,6 +133,7 @@ export const OPERATOR = {
   base: { node: "core", x: 103, y: 105, label: "Control" },
 };
 export const GUEST = {
+  id: "huesped",
   name: "Valentina Ruiz",
   initials: "VR",
   role: "Huésped",

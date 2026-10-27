@@ -11,6 +11,9 @@ import {
   compatible,
   routeFor,
   routePoints,
+  authorize,
+  canCancel,
+  isOpen,
 } from "../js/engine.js";
 const now = 1800000000000;
 const make = (overrides = {}) =>
@@ -434,4 +437,36 @@ test("una tarea bloqueada o sin acceso queda visible fuera del recorrido", () =>
       tickets.filter((t) => t.tech === "martin").length,
     );
   }
+});
+
+test("sólo el técnico a cargo puede iniciar, resolver o bloquear", () => {
+  let t = transition(make(), "assign", { tech: "martin" }, [], now);
+  for (const action of ["start", "resolve", "block"]) {
+    assert.throws(() => authorize(t, action, "sofia"));
+    assert.throws(() => authorize(t, action, "lucia"));
+    assert.throws(() => authorize(t, action, undefined));
+    assert.doesNotThrow(() => authorize(t, action, "martin"));
+  }
+  assert.doesNotThrow(() => authorize(t, "access", "sofia"));
+  assert.throws(() => authorize(t, "access", "martin"));
+  assert.throws(() => authorize(t, "confirm", "sofia"));
+  assert.doesNotThrow(() => authorize(t, "cancel", "huesped"));
+});
+test("el huésped cancela hasta que empieza la atención", () => {
+  let t = transition(make(), "assign", { tech: "martin" }, [], now);
+  assert.ok(canCancel(t));
+  const c = transition(t, "cancel", {}, [t], now);
+  assert.equal(c.status, "cancelled");
+  assert.ok(!isOpen(c));
+  t = transition(t, "access", {}, [t], now);
+  const w = transition(t, "start", {}, [t], now);
+  assert.throws(() => transition(w, "cancel", {}, [w], now));
+});
+test("comentarios del huésped sólo en solicitudes abiertas", () => {
+  const t = make();
+  const c = transition(t, "comment", { text: " llego a las 18 " }, [t], now);
+  assert.equal(c.comments[0].text, "llego a las 18");
+  assert.throws(() => transition(t, "comment", { text: " " }, [t], now));
+  const x = transition(t, "cancel", {}, [t], now);
+  assert.throws(() => transition(x, "comment", { text: "hola" }, [x], now));
 });
