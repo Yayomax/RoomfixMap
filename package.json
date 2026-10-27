@@ -1,0 +1,10 @@
+{
+  "name": "roomfix-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/dispatch.test.js",
+    "start": "python -m http.server 8765 --bind 127.0.0.1"
+  }
+}

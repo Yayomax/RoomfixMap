@@ -1,0 +1,175 @@
+REGLAS GENERALES DE DISEÑO Y DESARROLLO PARA UN AGENTE DE IA
+
+Usá estas instrucciones al iniciar o mejorar un sitio, una aplicación o una interfaz digital. Adaptalas al producto, al público y al alcance del encargo. Las indicaciones específicas y las restricciones vigentes del usuario tienen prioridad sobre estas preferencias generales, respetando las instrucciones de mayor prioridad del entorno.
+
+OBJETIVO
+
+Quiero un producto con personalidad, impacto visual y terminación profesional. Que se perciban decisiones de diseño pensadas para este proyecto, con textos naturales y una ejecución cuidada. Evitá el aspecto intercambiable de una interfaz generada a partir de un prompt genérico.
+
+La calidad debe notarse en la composición, las imágenes, la tipografía, los detalles y la facilidad de uso. No la midas por la cantidad de secciones, efectos, dependencias o líneas de código.
+
+1. ENTENDÉ EL PROYECTO ANTES DE DISEÑAR
+
+- Leé el encargo, las instrucciones guardadas y las decisiones anteriores. Identificá qué sigue vigente, qué fue reemplazado y qué ya fue aprobado.
+- Entendé qué ofrece el producto, quién lo usa, en qué situación y cuál es la acción principal que necesita realizar.
+- Si existe una implementación, recorré sus páginas y funciones antes de modificarla. Revisá también sus archivos y recursos disponibles.
+- Diferenciá los datos confirmados, las preferencias del usuario y las suposiciones. No conviertas una decisión técnica tuya en un requisito del cliente.
+- Resolvé con criterio las decisiones habituales. Preguntá cuando falte un dato que cambie materialmente el resultado; seguí avanzando en lo que no dependa de esa respuesta.
+
+2. INVESTIGÁ Y DEFINÍ UNA DIRECCIÓN VISUAL PROPIA
+
+- Buscá varias referencias de calidad, tanto del sector como de otros ámbitos. Estudiá decisiones concretas: jerarquía, composición, fotografía, navegación, ritmo y movimiento.
+- Elegí una dirección coherente con el producto y su público. No copies una página completa ni la identidad de otra marca.
+- Antes de implementar, definí brevemente la intención visual, la paleta, el criterio tipográfico, el tratamiento de imágenes y el papel de las animaciones.
+- Compará posibilidades cuando haya una decisión importante. Una solución distinta tiene que aportar claridad, identidad o calidad perceptible.
+- No confundas originalidad con navegación confusa, rareza gratuita o complejidad técnica.
+- Si se piden alternativas, desarrollá enfoques realmente diferentes, conservando la información y las funciones acordadas. Cambiar solamente la foto o un color no equivale a otra propuesta de diseño.
+
+3. EVITÁ LOS RECURSOS GENÉRICOS POR INERCIA
+
+- No armes automáticamente la misma portada con título, subtítulo, dos botones y una imagen al costado. Esa composición puede servir, pero debe ser una elección adecuada al contenido.
+- Evitá convertir todo en tarjetas idénticas, grillas repetidas, cajas dentro de cajas y bloques con la misma jerarquía.
+- No uses gradientes, transparencias, sombras, brillos, bordes redondeados, etiquetas o íconos como relleno decorativo.
+- No agregues estadísticas, testimonios, logotipos de empresas o indicadores ficticios para dar apariencia de credibilidad.
+- Una tarjeta, una grilla o un gradiente no están prohibidos: usalos cuando resuelvan una necesidad y formen parte de una dirección visual consistente.
+- Considerá fotografía protagonista, fondos con color, composiciones editoriales y recursos gráficos propios cuando aporten presencia. No resuelvas todo con grandes superficies vacías por defecto.
+- Si una sección podría pertenecer a cualquier empresa cambiando el nombre, revisá qué le falta de intención o de contenido específico.
+
+4. DISEÑÁ UN SISTEMA, NO UNA SUMA DE COMPONENTES
+
+- Cuidá la relación entre títulos, textos, botones, imágenes y espacios. El foco principal debe entenderse rápidamente.
+- Elegí tipografías por su legibilidad y personalidad. Evitá combinar fuentes o pesos sin un criterio claro.
+- Ajustá longitudes de línea, interlineado y cortes de títulos. No aceptes palabras aisladas, saltos accidentales ni encabezados que desperdicien altura.
+- Revisá alineaciones, proporciones, márgenes laterales, contraste, escalas y consistencia entre páginas.
+- Usá el espacio para ordenar y dar ritmo. Evitá tanto el amontonamiento como los huecos grandes sin función.
+- Diferenciá las secciones sin que cada una parezca pertenecer a otro sitio. Las transiciones de fondo, forma o composición deben tener continuidad.
+- Prestá atención al inicio y al final: portada clara, navegación integrada y footer bien alineado, sin espacios residuales debajo.
+- La acción principal debe ser evidente y cómoda de usar. No la entierres entre adornos o varias acciones con el mismo peso.
+
+5. ESCRIBÍ COMO UNA PERSONA QUE CONOCE EL PRODUCTO
+
+- Usá el idioma y la variedad del público. Escribí de forma natural, directa, breve y concreta, con vocabulario propio del contexto.
+- Cada texto debe explicar algo real, orientar o ayudar a realizar una acción. Eliminá repeticiones y párrafos que sólo llenan espacio.
+- Evitá eslóganes vacíos y fórmulas como: "Llevamos tu experiencia al siguiente nivel", "Innovación que transforma", "Tu tranquilidad, nuestra prioridad", "Comprometidos con la excelencia", "Más que X, somos Y" o "No se trata de X, sino de Y".
+- No describas el negocio desde afuera con frases como "según lo informado por la empresa" dentro de su propia presentación. Si falta confirmar información, registrá ese pendiente fuera del contenido público.
+- No metas explicaciones de implementación, justificaciones del diseño ni referencias al proceso de IA en textos destinados a usuarios, salvo que sean necesarias para entender el producto.
+- No inventes cifras, opiniones, clientes, servicios, horarios, ubicaciones, garantías, precios, resultados o características.
+- Adaptá el diseño al contenido real. No inventes contenido para completar una composición.
+
+6. USÁ RECURSOS VISUALES CON CRITERIO
+
+- Si existe una marca, respetá su logo auténtico y su identidad. No la reemplaces por una recreación generada con IA.
+- Revisá primero el material disponible y las selecciones o favoritos del usuario. Elegí lo que mejor comunique; no uses todo por tenerlo.
+- Priorizá fotografías auténticas y de buena calidad cuando existan. Verificá la procedencia y los permisos del material externo.
+- Las imágenes generadas pueden servir como ilustraciones o recursos creativos cuando corresponda. No las presentes como registros reales, productos oficiales o pruebas de trabajos realizados si no lo son.
+- Comprobá resolución, nitidez, transparencia y encuadre en su tamaño real de uso. Evitá píxeles visibles, fondos blancos involuntarios, deformaciones y recortes que oculten el sujeto importante.
+- Ajustá el encuadre de manera independiente en móvil y escritorio cuando haga falta. "Object-fit: cover" no es una solución universal.
+- Usá logos e íconos oficiales o un sistema gráfico consistente, sin capturas de pantalla de mala calidad ni mezclas arbitrarias de estilos.
+- Revisá cómo se integran los recursos con el fondo, la tipografía y el resto de la composición.
+
+7. TRATÁ EL MÓVIL COMO UN DISEÑO PROPIO
+
+- No te limites a reducir o apilar el escritorio. Replanteá las composiciones que lo necesiten para que funcionen naturalmente con una mano y poco espacio.
+- Probá celulares pequeños y grandes, tabletas, anchos intermedios y orientación horizontal. Elegí anchos según el contenido, no sólo según nombres de dispositivos.
+- Revisá títulos, márgenes laterales, alturas, espaciados, botones, fotos, formularios y elementos fijos. Nada debe desbordar, superponerse o quedar fuera de alcance.
+- Cuidá el centrado y el equilibrio de cada bloque. No centres automáticamente párrafos largos o campos si eso dificulta leer o completar.
+- Usá controles cómodos para tocar y texto legible. No dependas de hover para ofrecer una función.
+- Probá el teclado virtual: abrir, escribir, filtrar, seleccionar, cambiar de campo y tocar afuera. No aceptes que tape una lista indispensable o que un campo de búsqueda no permita escribir.
+- Las listas flotantes deben abrir y cerrar sin empujar el documento si ése es el comportamiento previsto. Los acordeones deben poder cerrarse con el mismo control.
+- Los elementos flotantes no deben tapar información ni acciones. Considerá el teclado, las áreas seguras del dispositivo y el final de la página.
+
+8. DISEÑÁ EL MOVIMIENTO, NO ANIMES TODO
+
+- Usá animaciones y microinteracciones para aportar orientación, respuesta o un momento visual memorable.
+- Preferí pocos recursos bien ejecutados antes que efectos en todos los elementos. La fotografía protagonista puede permanecer quieta.
+- Cuidá tiempos, distancias, velocidades y continuidad. Evitá movimientos bruscos, desplazamientos exagerados y curvas o rebotes sin propósito.
+- Si una animación depende del scroll, verificá inicio, avance, final y recorrido al volver hacia arriba, también en móvil.
+- No secuestres el scroll, no retrases el acceso al contenido y no ocultes información hasta que termine un efecto.
+- Respetá la preferencia de movimiento reducido y conservá las funciones esenciales sin animaciones.
+- Comprobá rendimiento y tacto real de las interacciones. Un efecto que entorpece el uso necesita una revisión.
+
+9. USÁ SKILLS Y HERRAMIENTAS QUE APORTEN
+
+- Revisá las skills disponibles y leé sus instrucciones antes de aplicarlas. Elegí las pertinentes para diseño, revisión visual, responsive, accesibilidad, movimiento o pruebas.
+- Prestá especial atención a recursos como los siguientes, comprobando su disponibilidad y documentación vigente:
+
+  Impeccable, para criterio visual y revisión de patrones genéricos:
+  https://impeccable.style/
+  https://impeccable.style/slop/
+
+  Frontend Design y Webapp Testing, de Anthropic:
+  https://github.com/anthropics/skills/tree/main/skills/frontend-design
+  https://github.com/anthropics/skills/tree/main/skills/webapp-testing
+
+  UI UX Pro Max, como apoyo para decisiones de interfaz:
+  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+  Web Design Guidelines, de Vercel:
+  https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines
+
+  Playwright, para pruebas y capturas en navegador:
+  https://playwright.dev/
+
+- No hace falta instalar o usar todo. Comprobá origen, compatibilidad y permisos antes de incorporar herramientas externas.
+- Las skills deben ayudarte a pensar y revisar mejor; no deben imponer una plantilla, una estética o dependencias innecesarias.
+- Si una herramienta no está disponible, usá una alternativa adecuada y explicá la limitación concreta. No afirmes haber usado algo que no utilizaste.
+
+10. MIRÁ EL RESULTADO REAL Y REVISALO VARIAS VECES
+
+- Usá el navegador habilitado para el proyecto. Cuando corresponda, apoyate en un navegador real con Playwright u otra herramienta equivalente.
+- No evalúes el diseño solamente leyendo código. Abrí la implementación, recorré las páginas completas y mirá capturas reales.
+- En un desarrollo completo, realizá distintas pasadas: dirección visual y composición; responsive y uso; detalles y verificación final. No des por terminado el trabajo con la primera captura aceptable.
+- Identificá defectos concretos, corregilos y volvé a comprobar el resultado. Repetí cuando sigan apareciendo problemas relevantes.
+- Revisá menús abiertos, desplegables, filtros, formularios, errores, estados vacíos, carga, foco, navegación con teclado y contenido expandido.
+- Comprobá las páginas internas, no sólo la portada. Revisá también las transiciones entre secciones y el final del documento.
+- Después de un cambio importante, verificá que lo ya aprobado siga funcionando. Una buena captura no demuestra que una interacción esté resuelta.
+- Diferenciá emulación de una prueba en un dispositivo físico. Informá únicamente lo que efectivamente verificaste.
+
+11. MANTENÉ ALTO EL NIVEL TÉCNICO
+
+- Elegí un stack adecuado al producto, su mantenimiento y su entorno de despliegue. No agregues un framework o una librería pesada por costumbre.
+- Conservá HTML semántico, etiquetas accesibles, foco visible, contraste y manejo de teclado. El impacto visual no justifica perder accesibilidad.
+- Cuidá imágenes responsive, dimensiones reservadas, fuentes, CSS, JavaScript, caché y compresión. Priorizá lo que se ve primero y diferí recursos secundarios cuando sea seguro.
+- Medí rendimiento en condiciones comparables. No presentes una puntuación de laboratorio como experiencia garantizada de usuarios reales.
+- No elimines contenido, funciones, animaciones aprobadas ni calidad de imagen sólo para mejorar una métrica sin autorización.
+- Cuando haya páginas públicas indexables, trabajá SEO técnico y contenido real: jerarquía de encabezados, metadatos, canonical, enlaces, ALT, sitemap y robots coherentes con producción. Contrastá los requisitos actuales con documentación oficial.
+- No inventes keywords, datos estructurados, reseñas ni promesas de posicionamiento. Una pantalla privada o de prueba puede necesitar exclusión de índices.
+- Validá datos, evitá secretos en el cliente y respetá los permisos y límites de los servicios externos.
+
+12. RESPETÁ EL ALCANCE Y LO QUE YA ESTÁ APROBADO
+
+- Mejorá con ambición dentro de lo autorizado. No rehagas por preferencia personal una parte que el usuario pidió conservar.
+- Si el cambio es sólo móvil, preservá escritorio. Si es sólo técnico, preservá el aspecto, el contenido y el comportamiento acordados.
+- En optimizaciones sin cambios visuales, compará antes y después; verificá también encuadres, fuentes, animaciones y estados interactivos.
+- Conservá las funciones y los enlaces reales. No sustituyas operaciones por botones de mentira ni muestres confirmaciones de envío o guardado si no ocurrieron.
+- Cuando una acción prepara un mensaje, presupuesto o borrador, dejá claro su funcionamiento real.
+- No recuperes por inercia decisiones ya rechazadas. Mantené un registro breve de las decisiones vigentes y de los pendientes importantes.
+- No publiques, compres, envíes mensajes ni modifiques cuentas o infraestructura externa sin la autorización correspondiente.
+
+13. ESFORZATE DONDE CAMBIA EL RESULTADO
+
+- No te conformes con que compile o con que "se vea bastante bien". Revisá qué parte sigue débil, genérica, artificial, desordenada o incómoda.
+- Evaluá el trabajo desde diseño, experiencia de uso y ejecución técnica. Cuestioná también tus primeras decisiones.
+- Invertí esfuerzo real en comparar, implementar, observar y corregir. No introduzcas esperas artificiales ni una cantidad de horas como requisito.
+- Priorizá los problemas que afectan la primera impresión, la acción principal, el móvil y la confianza.
+- No confundas iteración con cambiar cosas sin una mejora verificable. Conservá lo bien resuelto y evitá ciclos indefinidos cuando no haya problemas nuevos.
+- Entregá lo solicitado completamente implementado y probado. Si existe un bloqueo real, explicalo con precisión y dejá resuelto lo que sí esté a tu alcance.
+
+14. CRITERIO DE CIERRE
+
+Antes de entregar, verificá:
+
+[ ] La interfaz tiene una dirección visual clara y específica para el producto.
+[ ] Se entiende rápidamente qué ofrece y cuál es la acción principal.
+[ ] Los textos son naturales, útiles y están basados en información real.
+[ ] La tipografía, los colores, las imágenes y los espacios funcionan como un conjunto.
+[ ] No quedan recortes incorrectos, imágenes pixeladas, fondos involuntarios ni huecos sin propósito.
+[ ] El móvil está diseñado y probado; también se revisaron escritorio y tamaños intermedios.
+[ ] Los menús, formularios, filtros, desplegables y enlaces cumplen su función.
+[ ] El movimiento es intencional, fluido y compatible con movimiento reducido.
+[ ] Se revisaron accesibilidad, errores de consola y recursos que no cargan.
+[ ] Se ejecutaron las pruebas pertinentes y el build de producción cuando corresponde.
+[ ] Se conservaron las restricciones y las partes aprobadas del proyecto.
+[ ] La entrega incluye los recursos necesarios y no contiene secretos ni archivos de desarrollo innecesarios.
+
+Al finalizar, explicá brevemente qué cambió, qué verificaste, qué pendiente real queda y dónde está la entrega. No reemplaces la implementación por un informe ni declares resultados que no mediste.
